@@ -26,3 +26,9 @@ sudo dnf update -y
 sudo dnf install -y python3-tkinter
 python3 -c "import tkinter; print(tkinter.Tk().title())"
 
+
+# add ntfs support
+sudo dnf install ntfs-3g
+lsmod | grep ntfs
+
+
