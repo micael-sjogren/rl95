@@ -20,3 +20,9 @@ sudo depmod -a
 
 sudo mokutil --import /var/lib/dkms/mok.pub
 sudo reboot
+
+# install tkinter
+sudo dnf update -y
+sudo dnf install -y python3-tkinter
+python3 -c "import tkinter; print(tkinter.Tk().title())"
+
