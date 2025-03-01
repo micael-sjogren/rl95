@@ -3,7 +3,7 @@
 # Define NAS details
 NAS_IP="192.168.6.98"
 USERNAME="YOUR_USERNAME"
-PASSWORD="YOUR_PASSWORD_HERE"
+PASSWORD="YOUR_PASSWORD"
 
 # List of NAS folders and local mount points
 declare -A NAS_FOLDERS=(
