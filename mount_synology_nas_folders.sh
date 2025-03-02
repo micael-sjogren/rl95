@@ -11,7 +11,6 @@ declare -A NAS_FOLDERS=(
     ["Movies"]="/mnt/nas_movies"
     ["Series"]="/mnt/nas_series"
     ["Musik"]="/mnt/nas_music"
-    ["pkz"]="/mnt/nas_packsize"
     ["torrent_files"]="/mnt/nas_torrent_files"
     ["rocky_linux"]="/mnt/nas_rocky_linux"
 )
