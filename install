@@ -30,6 +30,11 @@ lsmod | grep ntfs
 # enable clip for menu
 sudo dnf install xclip
 
+# install git
+sudo dnf install git
+git config --global user.name "Micael"
+git config --global user.email "micaelsjogren.750129@gmail.com"
+
 
 # remove screen flickering
 #!/bin/bash
