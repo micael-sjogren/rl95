@@ -30,6 +30,7 @@ lsmod | grep ntfs
 # enable clip for menu
 sudo dnf install xclip
 
+
 # remove screen flickering
 #!/bin/bash
 TARGET_FILE="/usr/share/wayland-sessions/plasma.desktop"
