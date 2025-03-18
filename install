@@ -30,3 +30,18 @@ lsmod | grep ntfs
 # enable clip for menu
 sudo dnf install xclip
 
+# remove screen flickering
+#!/bin/bash
+TARGET_FILE="/usr/share/wayland-sessions/plasma.desktop"
+if [ -f "$TARGET_FILE" ]; then
+    # Add or modify the NoDisplay=true line
+    sudo sed -i '/^NoDisplay=/d' "$TARGET_FILE"
+    echo "NoDisplay=true" | sudo tee -a "$TARGET_FILE" > /dev/null
+    echo "Wayland session hidden in SDDM."
+    sudo systemctl restart sddm
+else
+    echo "Error: $TARGET_FILE not found!"
+    exit 1
+fi
+
+
